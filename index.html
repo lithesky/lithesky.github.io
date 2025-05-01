@@ -5,31 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>澳洲生活博客 - 留学签证，银行卡申请，便捷生活指南</title>
-    <link rel="stylesheet" href="styles.css"> <!-- 引入样式文件 -->
     <style>
+        /* Global Styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Helvetica', 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background-color: #f7f7f7;
             color: #333;
         }
 
+        a {
+            color: #e37e72;  /* 肉色 */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
         header {
-            background-color: #0d47a1;
-            color: white;
-            padding: 20px 0;
+            background-color: #f2e8e1; /* 淡肉色 */
+            padding: 40px 0;
             text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         header h1 {
             margin: 0;
             font-size: 2.5rem;
+            color: #333;
         }
 
         header p {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
+            color: #666;
             margin-top: 10px;
+        }
+
+        nav {
+            margin-top: 20px;
         }
 
         nav ul {
@@ -39,19 +54,12 @@
 
         nav ul li {
             display: inline;
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1rem;
+            margin-right: 20px;
         }
 
         main {
             padding: 40px 10%;
-            text-align: center;
+            text-align: left;
         }
 
         .section {
@@ -59,7 +67,7 @@
         }
 
         .section h2 {
-            color: #0d47a1;
+            color: #444;
             font-size: 2rem;
         }
 
@@ -67,61 +75,49 @@
             font-size: 1.1rem;
             line-height: 1.6;
             color: #555;
+            margin: 20px 0;
         }
 
-        .card-container {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            gap: 20px;
+        .list-container {
+            margin-top: 30px;
         }
 
-        .card {
-            background-color: white;
+        .list-container ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        .list-container li {
+            background-color: #fff;
+            margin-bottom: 20px;
             padding: 20px;
-            width: 250px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            transition: transform 0.3s;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
         }
 
-        .card:hover {
+        .list-container li:hover {
             transform: translateY(-5px);
         }
 
-        .card h3 {
-            color: #0d47a1;
+        .list-container h3 {
+            margin-top: 0;
+            color: #e37e72; /* 肉色 */
             font-size: 1.5rem;
         }
 
-        .card ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .card ul li {
-            margin-bottom: 10px;
-        }
-
-        .card ul li a {
-            color: #0d47a1;
-            text-decoration: none;
-        }
-
         footer {
-            background-color: #0d47a1;
-            color: white;
+            background-color: #f2e8e1; /* 淡肉色 */
+            color: #555;
+            padding: 30px 0;
             text-align: center;
-            padding: 20px;
+            font-size: 0.9rem;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
         }
 
         footer a {
-            color: #ffeb3b;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
+            color: #e37e72; /* 肉色 */
         }
     </style>
 </head>
@@ -129,32 +125,30 @@
 
     <!-- Header Section -->
     <header>
-        <div class="container">
-            <h1>澳洲生活博客</h1>
-            <p>一站式澳洲留学、签证、生活信息指南</p>
-            <nav>
-                <ul>
-                    <li><a href="#visa">签证申请</a></li>
-                    <li><a href="#study">留学申请</a></li>
-                    <li><a href="#bank">银行与信用卡</a></li>
-                    <li><a href="#phones">手机套餐</a></li>
-                    <li><a href="#cars">买卖二手车</a></li>
-                    <li><a href="#housing">买房租房</a></li>
-                    <li><a href="#transport">公交出行</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>澳洲生活博客</h1>
+        <p>留学签证、银行卡申请、便捷生活指南，一站式解决你的所有问题</p>
+        <nav>
+            <ul>
+                <li><a href="#visa">签证申请</a></li>
+                <li><a href="#study">留学申请</a></li>
+                <li><a href="#bank">银行卡与信用卡</a></li>
+                <li><a href="#phones">手机套餐</a></li>
+                <li><a href="#cars">买卖二手车</a></li>
+                <li><a href="#housing">买房租房</a></li>
+                <li><a href="#transport">交通出行</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Main Content Section -->
     <main>
         <section id="intro" class="section">
-            <h2>欢迎来到澳洲生活博客！</h2>
-            <p>这里汇集了最实用的澳洲生活信息，无论你是刚刚来澳洲的留学生，还是准备移民或者已经在澳洲生活多年的朋友，你都能在这里找到帮助。探索如何申请澳洲签证，了解最便宜的手机套餐，获取澳洲留学、买房、买车等生活技巧。</p>
+            <h2>欢迎来到澳洲生活博客</h2>
+            <p>这里汇集了最实用的澳洲生活信息，无论你是刚刚来澳洲的留学生，还是准备移民或者已经在澳洲生活多年的朋友，你都能在这里找到帮助。</p>
         </section>
 
-        <div class="card-container">
-            <section id="visa" class="card">
+        <div class="list-container">
+            <section id="visa">
                 <h3>澳洲签证申请</h3>
                 <p>无论你是留学签证、旅游签证，还是工作签证，我们为你提供详细的申请流程和小贴士。</p>
                 <ul>
@@ -164,7 +158,7 @@
                 </ul>
             </section>
 
-            <section id="study" class="card">
+            <section id="study">
                 <h3>留学申请</h3>
                 <p>如果你想去澳洲留学，我们提供完整的留学申请指南，从院校选择到签证审批，帮你每一步。</p>
                 <ul>
@@ -174,8 +168,8 @@
                 </ul>
             </section>
 
-            <section id="bank" class="card">
-                <h3>澳洲银行卡和信用卡申请</h3>
+            <section id="bank">
+                <h3>银行卡与信用卡</h3>
                 <p>在澳洲生活，选择合适的银行卡和信用卡很重要。我们为你推荐最适合留学生的银行账户及信用卡。</p>
                 <ul>
                     <li><a href="#">如何开设澳洲银行账户</a></li>
@@ -184,7 +178,7 @@
                 </ul>
             </section>
 
-            <section id="phones" class="card">
+            <section id="phones">
                 <h3>便宜的手机套餐</h3>
                 <p>了解澳洲最便宜的手机套餐，帮助你省钱又能保持通讯畅通。</p>
                 <ul>
@@ -193,11 +187,9 @@
                     <li><a href="#">如何选择适合自己的手机套餐</a></li>
                 </ul>
             </section>
-        </div>
 
-        <div class="card-container">
-            <section id="cars" class="card">
-                <h3>买车卖车攻略</h3>
+            <section id="cars">
+                <h3>买卖二手车</h3>
                 <p>无论你是买车还是卖车，了解市场信息和操作流程非常重要。这里为你提供关于二手车买卖的全面指南。</p>
                 <ul>
                     <li><a href="#">如何选择适合的二手车</a></li>
@@ -206,8 +198,8 @@
                 </ul>
             </section>
 
-            <section id="housing" class="card">
-                <h3>买房租房指南</h3>
+            <section id="housing">
+                <h3>买房租房</h3>
                 <p>在澳洲找房子不仅是一个大挑战，还涉及到各种法律条款。我们提供买房、租房的全方位信息。</p>
                 <ul>
                     <li><a href="#">如何选择合适的房子</a></li>
@@ -216,8 +208,8 @@
                 </ul>
             </section>
 
-            <section id="transport" class="card">
-                <h3>坐公交与交通出行</h3>
+            <section id="transport">
+                <h3>交通出行</h3>
                 <p>澳洲的公共交通系统方便快捷。了解如何使用公交、地铁及其他交通工具，帮助你轻松出行。</p>
                 <ul>
                     <li><a href="#">如何购买公交卡</a></li>
